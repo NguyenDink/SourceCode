@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+h1 {
+	color: teal;
+}
+
+h2, h3 {
+	color: blue;
+}
+
+label {
+	float: left;
+	width: 6em;
+	margin-bottom: 0.5em;
+}
+
+input[type="text"],
+input[type="email"] {
+	width: 15em;
+	margin-left: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+br {
+	clear: both;
+}
+
+span {
+    margin-left: 0.5em;    
+    margin-bottom: 0.5em;    
+}
+
+#submit {
+	margin-left: 0.5em;
+}

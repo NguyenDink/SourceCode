@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+			xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+			xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" 
+			id="WebApp_ID" version="4.0">
+  <display-name>ch05email</display-name>
+  
+  	<context-param>
+        <param-name>custServEmail</param-name>
+        <param-value>custserv@murach.com</param-value>
+    </context-param>
+  	
+    <servlet>
+        <servlet-name>DownloadServlet</servlet-name>
+        <servlet-class>murach.download.DownloadServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DownloadServlet</servlet-name>
+        <url-pattern>/Chapter7/download</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>CartServlet</servlet-name>
+        <servlet-class>murach.cart.CartServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>CartServlet</servlet-name>
+        <url-pattern>/Chapter7_7.3/cart</url-pattern>
+    </servlet-mapping>
+    
+	<servlet>
+        <servlet-name>ProductsServlet</servlet-name>
+        <servlet-class>murach.cart.ProductsServlet</servlet-class>
+    </servlet>
+    
+   	<servlet-mapping>
+        <servlet-name>ProductsServlet</servlet-name>
+        <url-pattern>/Chapter7_7.3/loadProducts</url-pattern>
+    </servlet-mapping>
+    
+    <session-config>
+        <session-timeout>30</session-timeout>
+        <tracking-mode>COOKIE</tracking-mode>
+    </session-config>
+    
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

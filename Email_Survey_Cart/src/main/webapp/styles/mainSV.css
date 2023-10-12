@@ -1,0 +1,38 @@
+@charset "ISO-8859-1";
+@charset "ISO-8859-1";
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+h1 , h2 {
+	color: teal;
+}
+
+h3 {
+	color: blue;
+}
+
+label {
+	float: left;
+	width: 8em;
+	margin-bottom: 0.5em;
+}
+input[type="text"], input[type="email"], input[type="date"] {
+	width: 15em;
+	margin-left: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+br {
+	clear: both;
+}
+#submit {
+	margin-left: 0.5em;
+}
+
+span {
+    margin-left: 0.5em;    
+    margin-bottom: 0.5em;    
+}
