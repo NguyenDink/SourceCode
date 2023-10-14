@@ -30,7 +30,7 @@
 		<span>${user.cbSend}</span><br>
 		
 		<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-	    <c:if test="${user.cbLike == 'Yes'}">
+	    <c:if test="${user.cbSend == 'Yes'}">
 	        <label><b>Contact Via:</b></label>
 	        <span>${user.contact}</span>
 	    </c:if>
